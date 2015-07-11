@@ -1,0 +1,79 @@
+table {
+    width: 100%;
+    border-spacing: 0;
+}
+
+td {
+    border: none;
+    padding-left: 3px;
+}
+
+tr:nth-child(2n) {
+    background-color: lightgray;
+}
+
+.tabs {
+    text-transform: uppercase;
+}
+.tabs .tab {
+    width: 20%;
+    display: inline-block;
+    padding: 5px 15px;
+}
+.tabs .tab.selected {
+    font-size: 40px;
+}
+
+.bars .item {
+    height: 50px;
+    
+    position: relative;
+}
+.bars .item:hover {
+    /* background-color: #EFEFEF; */
+}
+.bars .item .bar {
+    height: 100%;
+    opacity: 0.3;
+    
+    position: absolute;
+    top: 0;
+}
+.bars .item:hover .bar {
+    opacity: 1;
+}
+
+.bars .item .text {
+    position: absolute;
+    z-index: 5;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+    
+    text-align: center;    
+    font-size: 22px;
+    text-transform: uppercase;
+}
+.bars .item:hover .text {
+    display: none;
+}
+
+.bars .item .number {
+    display: none;
+    
+    position: absolute;
+    z-index: 5;
+    top: -26px;
+    left: 0;
+    width: 100%;
+    
+    font-size: 70px;
+}
+.bars .item:hover .number {
+    display: block;
+}
+.bars .item .number small {
+    position: absolute;
+    bottom: 22px;
+    font-size: 20px;
+}

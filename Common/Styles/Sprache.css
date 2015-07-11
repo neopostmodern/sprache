@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+html {
+    width: 100%;
+}
+
+body {
+    width: 800px;
+    margin: 10% auto 100px;
+    
+    font-family: 'Cantarell', sans-serif;
+}
+
+a {
+    color: darkorange;
+    
+    text-decoration: none;
+}
+a:hover, .link:hover {    
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+input[type="text"], .input-text {
+    display: inline-block;
+    
+    border: 2px solid gray;
+    padding: 2px;
+    
+    width: 300px;
+    
+    font-family: 'Cantarell', sans-serif;
+}
+select {
+    border: 2px solid gray;
+    padding: 2px;
+    
+    font-family: 'Cantarell', sans-serif;
+    width: 150px;
+}
+
+.button {
+    width: 150px;
+    height: 26px;
+    padding-top: 6px;
+    border: 1px gray solid;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.button:hover {
+    background-color: lightgray;
+}
+
+h1, #quote {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 50px;
+    
+    font-family: 'Gentium Basic', serif;
+    line-height: 1.1em;    
+}
+
+#quote {
+    margin: 80px 0;
+    
+    /*
+    -moz-hyphenate-after: 4;
+    -moz-hyphens: auto;
+    hyphens: auto;
+    */
+}
+
+.progress {
+    text-align: right;
+}
+.progress .bar {
+    height: 1px;
+    background-color: lightgray;
+    
+    position: relative;
+}
+.progress .bar .filled {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    
+    width: 40%;
+    background-color: gray;
+}
+
+.rating .item {
+    text-align: center;
+    font-weight: 900;
+    font-size: 30px;
+    color: white;
+    
+    
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    
+    width: 18.4%;
+    margin-right: 2%;
+    background-color: gray;
+    
+    display: inline-block;
+}
+.rating .item:last-of-type {
+    margin-right: 0;
+}
